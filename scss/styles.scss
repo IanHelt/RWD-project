@@ -1,0 +1,305 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body{
+  background-image: url(../skateboard-images/bg.jpg);
+  width: 1680px;
+  max-width: 100%;
+  align-self: center;
+}
+  .wrapper{
+    background-color: rgba(0, 0, 0, .5);
+    max-width: 100%;
+  }
+  .media-links{
+
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    margin: 0 12% 1% 12%;
+  }
+  .media-links label{
+    display: flex;
+    align-self: center;
+    padding: .7% 15% .7% 0;
+    border-right-style: dotted;
+    border-right-color: #FFFFFF;
+    border-right-width: 3.5px;
+    margin: 0;
+    font-weight: normal;
+    color: #FFFFFF;
+  }
+  .media-links label i{
+    align-self: center;
+    min-height: 5px;
+    border-left-style: dotted;
+    border-left-width: 4px;
+    margin-left: 10px;
+  }
+  .media-links a{
+    margin: .8%;
+    width: 6%;
+    height: 5%;
+  }
+  .media-links a i{
+    text-align: center;
+    padding: 10%;
+
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 300%;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, .8);
+  }
+  #facebook i{
+    background-color: rgba(63, 51, 255, .7);
+    color: rgba(255, 255, 255, .5);
+  }
+  #rss i{
+    background-color: rgba(255, 180, 51, .7);
+    color: rgba(255, 255, 255, .5);
+  }
+  #twitter i{
+    background-color: rgba(125, 155, 255, .7);
+    color: rgba(255, 255, 255, .5);
+  }
+  #youtube i{
+    background-color: rgba(255, 0, 0, .7);
+    color: rgba(255, 255, 255, .5);
+  }
+  .nav-sheet{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    max-height: 70px;
+  }
+  .nav-sheet .col-md-3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: darken(#b30015, 2%);
+    margin: 0 5px;
+    padding: 0;
+    width: 260px;
+    min-width: 20%;
+    max-width: 24%;
+    border-bottom-style: outset;
+    border-bottom-color: rgba(220,220,220,.9);
+  }
+  .nav-sheet .col-md-3 a{
+    align-self: center;
+    display: flex;
+    align-content: center;
+    color: #FFFFFF;
+    font-size: 100%;
+    height: 40px;
+    max-height: 100%;
+
+  }
+  .nav-sheet .col-md-3 a label{
+    font-weight: 300;
+    align-self: center;
+    font-size: 100%;
+    color: #FFFFFF;
+    margin: 0 10px 0 10px;
+  }
+  .nav-sheet .col-md-3 a i{
+    display: flex;
+    max-height: 80%;
+    font-size: 400%;
+    font-weight: 100;
+    align-items: center;
+  }
+  .image-scroller{
+    min-height: 375px;
+    background-image: url(../skateboard-images/peralta-logo.png),
+                      url(../skateboard-images/grid.png),
+                      url(../skateboard-images/top-image.png);
+    background-repeat: no-repeat;
+    background-position: 20px 30px,center, -120px -150px;
+    background-blend-mode: normal,overlay,normal;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 15px;
+    background-clip: content-box;
+    margin: 20px 0;
+  }
+  .news-container{
+    max-height: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .news{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+    max-width: 32.5%;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+  }
+  .news h2{
+    font-weight: 400;
+    font-size: 150%;
+  }
+  .news p{
+    margin: 0;
+    line-height: 2;
+    color: darken(gray, 10%);
+    font-size: 100%;
+  }
+  .news a{
+    font-size: 100;
+    color: darken(#b30015, 2%);
+    display: block;
+    text-align: center;
+  }
+  .skaters{
+    display: flex;
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 600px;
+  }
+  #lance,#rodney,#steve,#tommy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: thick;
+    color: #FFFFFF;
+    font-size: 350%;
+    font-weight: 900;
+    line-height: 1;
+    box-shadow: 0 3px rgba(255,255,255,.5);
+  }
+
+  #left-skaters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 66%;
+    height: 100%;
+  }
+  #lance{
+    background-image: url(../skateboard-images/sk8er-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -140px;
+    height:48%;
+    width: 49%;
+  }
+  #rodney{
+    background-image: url(../skateboard-images/sk8er-3.png);
+    height:48%;
+    width: 49%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #steve{
+    background-image: url(../skateboard-images/sk8er-1.png);
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    align-self: flex-end;
+  }
+  #tommy{
+    background-image: url(../skateboard-images/sk8er-2.png);
+    height:100%;
+    width: 33%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right -100px;
+    margin-left: 1%;
+  }
+  .boards{
+    margin: auto;
+  }
+  .boards div.col-md-12{
+    display: flex;
+    justify-content: space-around;
+    width:1140px;
+    max-width: 100%;
+    align-self: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px rgba(255,255,255,.5);
+  }
+  .form-sheet{
+  background-color: #FFFFFF;
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px rgba(255,255,255,.5);
+  padding: 15px;
+  }
+  .form-sheet div.col-md-6 p{
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+  div.col-md-1.icons{
+    display: flex;
+    justify-content: space-between;
+    min-width: 30%;
+    font-size: 15px;
+  }
+  div.col-md-1.icons i{
+    text-align: center;
+    padding: 5px;
+    width:25px;
+    color: rgba(255,255,255,.7);
+    background-color: rgba(0,0,0,.5);
+  }
+  div.col-md-1.icons i:first-child{
+    color: rgba(255,255,255,.7);
+    background-color: rgba(0,0,0,.7);
+  }
+  div.col-md-1.icons i:nth-child(0n+2){
+    color: rgba(255,255,255,.7);
+    background-color: rgba(0,0,0,.3);
+  }
+  .form-sheet div.col-md-6 form{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group input{
+    border-left-style: solid;
+    border-top-style: solid;
+    border-left-color: rgba(0,0,0,.4);
+    border-top-color: rgba(0,0,0,.4);
+    border-top-width: medium;
+    border-left-width: medium;
+    font-weight: 300;
+    border-radius: 0;
+  }
+  .form-control{
+    border-left-style: solid;
+    border-top-style: solid;
+    border-left-color: rgba(0,0,0,.4);
+    border-top-color: rgba(0,0,0,.4);
+    border-top-width: medium;
+    border-left-width: medium;
+    font-weight: 300;
+    border-radius: 0;
+  }
+  .form-sheet div.col-md-6 form button{
+    width: 55%;
+    align-self: flex-end;
+    background-color: darken(#b30015, 2%);
+    color:#FFFFFF;
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 0;
+    margin: 20px 0 10px 0;
+  }
